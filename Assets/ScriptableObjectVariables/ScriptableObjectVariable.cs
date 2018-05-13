@@ -4,10 +4,9 @@ namespace ScriptableObjectVariables
 {
     public class ScriptableObjectVariable<T> : ScriptableObject
     {
-#if UNITY_EDITOR
         [Multiline]
         public string DeveloperDescription = "";
-#endif
+        
         public T Value;
         public bool useAsConstant = true; // If true it is only possible to change the variable via the Inspector
 
